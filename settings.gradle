@@ -1,3 +1,6 @@
 rootProject.name = 'notes'
 include 'core'
+include 'core:desktop'
+findProject(':core:desktop')?.name = 'desktop'
+include 'desktop'
 
